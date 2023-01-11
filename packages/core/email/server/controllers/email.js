@@ -18,7 +18,7 @@ module.exports = {
       if (e.statusCode === 400) {
         throw new ApplicationError(e.message);
       } else {
-        throw new Error(`Couldn't send email: ${e.message}.`);
+        throw new Error(`Couldn't send email: ${e}.`);
       }
     }
 
@@ -47,7 +47,7 @@ module.exports = {
       if (e.statusCode === 400) {
         throw new ApplicationError(e.message);
       } else {
-        throw new Error(`Couldn't send test email: ${e.message}.`);
+        throw new Error(`Couldn't send test email: ${e}.`);
       }
     }
 
